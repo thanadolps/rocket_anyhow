@@ -36,7 +36,9 @@ pub type Result<T = ()> = std::result::Result<T, Error>;
 /// "debug prints the internal value before responding with a 500 error"
 ///
 /// [rocket::response::Debug]: https://api.rocket.rs/v0.4/rocket/response/struct.Debug.html
+#[derive(Debug)]
 pub struct Error(pub anyhow::Error);
+
 impl<E> From<E> for crate::Error
 where
     E: Into<anyhow::Error>,
