@@ -1,4 +1,3 @@
-#![feature(proc_macro_hygiene, decl_macro)]
 //! This library provided [`rocket_anyhow::Error`][Error],
 //! a wrapper around [`anyhow::Error`]
 //! with rocket's [responder] implemented.
