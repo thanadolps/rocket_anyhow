@@ -5,7 +5,7 @@ a wrapper around [anyhow::Error]
 with rocket's [responder] implemented.
 
 [anyhow::Error]: https://docs.rs/anyhow/1.0/anyhow/struct.Error.html
-[responder]: https://api.rocket.rs/v0.4/rocket/response/trait.Responder.html
+[responder]: https://api.rocket.rs/v0.5-rc/rocket/response/trait.Responder.html
 
 ```rust
 use std::io::Write;

@@ -3,7 +3,7 @@
 //! with rocket's [responder] implemented.
 //!
 //! [anyhow::Error]: https://docs.rs/anyhow/1.0/anyhow/struct.Error.html
-//! [responder]: https://api.rocket.rs/v0.4/rocket/response/trait.Responder.html
+//! [responder]: https://api.rocket.rs/v0.5-rc/rocket/response/trait.Responder.html
 //!
 //! ```no_run
 //! # #[macro_use] extern crate rocket;
@@ -28,13 +28,13 @@ pub type Result<T = ()> = std::result::Result<T, Error>;
 /// with rocket's [responder] implemented
 ///
 /// [anyhow::Error]: https://docs.rs/anyhow/1.0/anyhow/struct.Error.html
-/// [responder]: https://api.rocket.rs/v0.4/rocket/response/trait.Responder.html
+/// [responder]: https://api.rocket.rs/v0.5-rc/rocket/response/trait.Responder.html
 /// Error that can be convert into `anyhow::Error` can be convert directly to this type.
 ///
 /// Responder part are internally delegated to [rocket::response::Debug] which
 /// "debug prints the internal value before responding with a 500 error"
 ///
-/// [rocket::response::Debug]: https://api.rocket.rs/v0.4/rocket/response/struct.Debug.html
+/// [rocket::response::Debug]: https://api.rocket.rs/v0.5-rc/rocket/response/struct.Debug.html
 #[derive(Debug)]
 pub struct Error(pub anyhow::Error);
 
