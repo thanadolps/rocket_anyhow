@@ -10,6 +10,6 @@ description = "throw any error inside rocket's route"
 
 [dependencies]
 rocket = "0.5.0-rc.3"
-anyhow = "1.0.40"
+anyhow = "1.0"
 
 [dev-dependencies]
