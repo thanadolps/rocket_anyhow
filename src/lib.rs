@@ -47,7 +47,7 @@ where
     }
 }
 
-impl<'r> Responder<'r, 'static> for Error {
+impl<'r> Responder<'r, 'r> for Error {
     fn respond_to(self, request: &Request<'_>) -> response::Result<'static> {
         response::Debug(self.0).respond_to(request)
     }
